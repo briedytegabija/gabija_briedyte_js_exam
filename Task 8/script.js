@@ -5,3 +5,35 @@ subtraction(a, b) - priima du skaičius ir grąžina jų skirtumą.
 multiplication(a, b) - priima du skaičius ir grąžina jų daugybos rezultatą;
 division(a, b) - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
+
+class Calculator{
+    sum(a,b){
+        this.a = a;
+        this.b = b;
+        
+        return a+b;
+    }
+
+    subtraction(a,b){
+        this.a = a;
+        this.b = b;
+
+        return a-b;
+    }
+
+    multiplication(a,b){
+        this.a = a;
+        this.b = b;
+
+        return a*b;
+    }
+
+    division(a,b){
+        this.a = a;
+        this.b = b;
+
+        return a/b;
+    }
+}
+
+

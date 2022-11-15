@@ -28,5 +28,14 @@ function filterDogOwners(users){
   console.log(dogOwners);
 }
 
+function filterAdults(users){  
+  var adults = users.filter(function(users){
+    return users.age >= 18;
+  }); 
+
+  console.log(adults);
+}
+
 filterDogOwners(users);
+filterAdults(users);
 

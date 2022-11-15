@@ -9,4 +9,11 @@ Pastaba: rezultatas turi būti matomas pateikus formą ir atvaizduojamas
 <div id="output"></div> viduje. Gautus atsakymus stilizuokite naudojant CSS;
 ------------------------------------------------------------------- */
 
+const input = document.getElementById('search');
+const output = document.getElementById('output');
+const submit = document.getElementById('submit-btn');
+
+
+
+
 

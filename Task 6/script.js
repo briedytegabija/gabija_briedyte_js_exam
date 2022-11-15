@@ -34,4 +34,17 @@ function getUserAverageAge(users){
   console.log("visu users amziaus vidurkis:" + avg + " suapvalinus :" + Math.round(avg));
 }
 
+function getUsersNames(users){
+  new_array = []; 
+
+  const len = users.length;
+
+  for(let i = 0; i < len; i++ ){
+    p = users[i];
+    new_array.push(p.name);
+  }
+  console.log(new_array);
+}
+
 getUserAverageAge(users);
+getUsersNames(users);

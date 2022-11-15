@@ -8,12 +8,58 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: rezultatas turi būti matomas pateikus formą ir atvaizduojamas
 <div id="output"></div> viduje. Gautus atsakymus stilizuokite naudojant CSS;
 ------------------------------------------------------------------- */
+/*
+function lb(kg){
+    const res = kg * 2.2046;
+    return res;    
+}
+function g(kg){
+    const res = kg * 0.001;
+    return res;   
+}
+function oz(kg){
+    const res = kg * 35.274;
+    return res;    
+}
 
-const input = document.getElementById('search');
-const output = document.getElementById('output');
+
+const data = document.getElementById('search');
+const outputEl = document.getElementById('output');
+const submitBtn = document.getElementById('submit-btn');
+
+submitBtn.addEventListener('click' , (e) => {
+
+    e.preventDefault();
+
+    let kg = data.value;
+    
+    outpuyEl.innerHTML = " ";
+    function lb(kg);
+    function g(kg);
+    function oz(kg);
+
+
+}); */ 
+
+function res(kg){
+
+    lb = kg * 2.2046;
+    g = kg / 0.001;
+    oz = kg * 35.274;
+
+    const output = document.getElementById('output');
+    outputEl.innerHTML = `<p> ${kg} kg pavertus i lb yra = ${lb} </br>
+    ${kg} kg pavertus i g yra = ${g} </br>
+    ${kg} kg pavertus i oz yra = ${oz} </p>`
+}
+
+
+const search_weight = document.getElementById("search");
 const submit = document.getElementById('submit-btn');
 
-
-
-
+submit.addEventListener('click', (e) => {
+    e.preventDefault;
+    const kg = search_weight.value();
+    res(kg);
+});
 
